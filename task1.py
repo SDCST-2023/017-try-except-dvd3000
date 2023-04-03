@@ -7,7 +7,14 @@
 # modify this code with a while loop along with a try...except 
 # block so that the user will keep entering in a number
 # until they have entered a value integer value
+num = False
 
-number = input("Please enter in an integer value")
-number = int(number)
-print(number)
+while num == False:
+    try:
+        number = input("Please enter in an integer value: ")
+        number = int(number)
+        print(number)
+        break
+    except Exception as e:
+        print(f"{number} is not a valid number.")
+print("Good job!!")

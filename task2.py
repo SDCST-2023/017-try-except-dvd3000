@@ -15,3 +15,11 @@ The reciprocal of 3 is 0.3333333333333333
 The reciprocal of 4 is 0.25
 """
 numbers = [0,1,2,3,4]
+
+
+for i in range(len(numbers)):
+    try:
+        print (f"The reciprocal of {numbers[i]} is {1.0 / numbers[i]}")
+    except Exception as e:
+        print (f"The reciprocal of {numbers[i]} does not exist.")
+print("Good job!!")
